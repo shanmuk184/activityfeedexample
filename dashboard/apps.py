@@ -7,6 +7,10 @@ class DashboardConfig(AppConfig):
         from actstream import registry
         from django.contrib.auth.models import User, Group
         registry.register(User)
-        registry.register(self.get_model('Task'))
-        registry.register(self.get_model('Supervisor'))
+        registry.register(self.get_model('Application'))
+        registry.register(self.get_model('UserCity'))
+        registry.register(self.get_model('City'))
+        
+        
+        registry.register(self.get_model('Job'))
         registry.register(Group)

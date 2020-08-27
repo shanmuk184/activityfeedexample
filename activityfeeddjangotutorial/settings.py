@@ -44,7 +44,7 @@ INSTALLED_APPS = [
 ACTSTREAM_SETTINGS = {
     'MANAGER': 'dashboard.managers.MyActionManager',
     'FETCH_RELATIONS': True,
-    'USE_PREFETCH': True,
+    'USE_PREFETCH': False,
     'USE_JSONFIELD': False,
     'GFK_FETCH_DEPTH': 1,
 }
